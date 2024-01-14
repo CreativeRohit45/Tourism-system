@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: linear-gradient(90deg, #00aaee 10%,#DD2476 90%);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 400px;
+
+    }
+    .button{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Lato',sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
+  color: #00c7ec;
+  line-height: 3em;
+  overflow: hidden;
+  padding: 0 3em;
+  box-shadow: 0 0 0 0 transparent;
+  letter-spacing: 4px;
+  transition: all 0.2s ease-in;
+
+}
+
+.btn{
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s ease;
+}
+
+.btn:hover{
+  color: #fff;
+  background-color: #00c7ec;
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5);
+  transition: all 0.2 ease-out;
+}
+
+.btn:before{
+  content: "";
+  display: block;
+  width: 0px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 0 0 15px 3px #fff;
+  transform: skewX(-20deg);
+}
+.btn:hover:before{
+  animation: shine 1s 0s linear;
+}
+
+.btn:active{
+  box-shadow: 0 0 0 0 transparent;
+  transition: box-shadow 0.2s ease-in;
+}
+
+@keyframes shine{
+  0%{
+    opacity: 0;
+    left: 0;
+
+  }
+  50%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+    left: 0;
+
+  }
+}
+  </style>
+</head>
+<body>
+  
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(3.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(4.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Sam.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(M.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(5.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(6.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Nad1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(8.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(10.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(12.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(14.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Sid2.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(17.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(18.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(19.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(20.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Sid.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Nad.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(Sid1.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(16.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(7.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(21.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(22.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(23.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(24.jpg)"></div>
+
+
+
+
+
+
+    </div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+  <div class="button">
+    <a href="Main.html" class="btn">Go Back</a>
+  </div>
+</body>
+</html>

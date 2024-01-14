@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #313131;
+}
+
+.silder{
+	overflow: hidden;
+}
+
+.slider figure{
+	position: relative;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+
+.silder figure img{
+	width: 50%;
+}
+
+img{
+	width: 20%;
+	height: 40%;
+}
+
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 0;
+	}
+	100%{
+		left: 100%;
+	}
+}
+
+
