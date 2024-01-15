@@ -151,18 +151,18 @@ body{
 
 @keyframes animate{
 	0%,100%{
-		background-image: url(Sid2.jpg);
+		background-image: url(MainImages/Sid2.jpg);
 	}
 
 	25%{
-		background-image: url(Main1.jpg);
+		background-image: url(MainImages/Main1.jpg);
 	}
 
 	50%{
-		background-image: url(14.jpg);
+		background-image: url(MainImages/14.jpg);
 	}
 
 	75%{
-		background-image: url(6.jpg);
+		background-image: url(MainImages/6.jpg);
 	}
 }*/
